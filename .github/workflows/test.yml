@@ -1,0 +1,17 @@
+name: Fathima's Test Action
+
+on: [push]  # Runs every time you push code
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Free computer GitHub gives you
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: 23f3003140@ds.study.iitm.ac.in  # ← YOUR REQUIRED STEP!
+        run: echo "Hello from Fathima's GitHub Action!"
+        
+      - name: List files
+        run: ls -la
